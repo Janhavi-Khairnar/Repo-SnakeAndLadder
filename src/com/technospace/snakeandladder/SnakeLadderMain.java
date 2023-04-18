@@ -10,6 +10,7 @@ public class SnakeLadderMain {
 		 * Using this variable sets the initial position of a player.
 		 */
 		int position = 0;
+		int count_rollDie = 0;
 		final int NO_PLAY = 1;
 		final int LADDER = 2;
 		final int SNAKE = 3;
@@ -25,6 +26,8 @@ public class SnakeLadderMain {
 		{	
 			int dieNo = random.nextInt(6)+1;
 			System.out.println("Die Number :"+dieNo);
+			
+			count_rollDie++;
 			
 			int option = random.nextInt(3)+1;
 			System.out.println("Option Number :"+option);
@@ -51,10 +54,10 @@ public class SnakeLadderMain {
 					break;
 			}
 			
-			System.out.println("New Position :"+position);
-			System.out.println("#######");
-		
-		}
+				System.out.println("New Position :"+position);
+				System.out.println("#######");
+			}
+		System.out.println("How many times roll is die ? :"+count_rollDie);
 	}	
 
 }
