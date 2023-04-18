@@ -37,6 +37,9 @@ public class SnakeLadderMain {
 				case LADDER:
 						System.out.println("Option = Ladder");
 						position = position + dieNo;
+						if(position > 100) {
+							position  = position - dieNo;
+						}
 					break;
 				case SNAKE:
 						System.out.println("Option = Snake");
@@ -51,7 +54,7 @@ public class SnakeLadderMain {
 			System.out.println("New Position :"+position);
 			System.out.println("#######");
 		
-	}
+		}
 	}	
 
 }
